@@ -43,7 +43,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Rajasthan</a>
                         <a class="dropdown-item" href="../OtherHTML/ladakh.html">Ladakh</a>
-                        <a class="dropdown-item" href="#">Coorg</a>
+                        <a class="dropdown-item" href="../OtherHTML/coorg.html">Coorg</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../OtherHTML/package.html">See all Packages</a>
 
@@ -168,12 +168,12 @@
                     <h4>Navigation Links</h4>
                     <div class="row">
                       <ul class="col footer-nav">
-                        <a href="#">Home</a><br>
-                        <a href="#">Services</a><br>
-                        <a href="#">Project</a><br>
-                        <a href="#">Team Members</a><br>
-                        <a href="#">Our Partners</a><br>
-                        <a href="#">Contact</a><br><br>
+                        <a id="anc1" onclick="openPopup()">Home</a><br>
+                        <a id="anc1" onclick="openPopup()">Services</a><br>
+                        <a id="anc1" onclick="openPopup()">Project</a><br>
+                        <a id="anc1" onclick="openPopup()">Team Members</a><br>
+                        <a id="anc1" onclick="openPopup()">Our Partners</a><br>
+                        <a id="anc1" onclick="openPopup()">Contact</a><br><br>
                       </ul>
                     </div>
                   </div>
@@ -207,30 +207,22 @@
                 <div class="row justify-content-between">
                   <div class="col-lg-120">
                     <div>
-                      <p >© 2020-2021 Wanderer Pvt. Ltd. &nbsp&nbsp<h5 onclick="openPopup()">Privacy</h5><h5 onclick="openPopup()">Terms</h5></p>   
-                    <div class="popup" id="popup">
-                      <h2>Rules and Regulations</h2>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                      </p>
-                      <button type="button" onclick="closePopup()">OK</button>
-                    </div>
+                      <!-- <p >© 2020-2021 Wanderer Pvt. Ltd. &nbsp&nbsp<a href="#">Privacy</a> · <a href="#">Terms</a></p> -->
+                      <p >© 2020-2021 Wanderer Pvt. Ltd. &nbsp&nbsp<button type="submit" id="btn1" onclick="openPopup()">Privacy</button> · <button type="submit" id="btn1" onclick="openPopup()">Terms</button></p>   
+                      <div class="popup" id="popup">
+                        <h2>Rules and Regulations</h2>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                        </p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </footer>
-          <script>
-            let popup= document.getElementById("popup");
-            function openPopup(){
-              popup.classList.add("open-popup");
-            }
-            function closePopup(){
-              popup.classList.remove("open-popup");
-            }
-          </script>
-
+          
     <script src="../js/totop.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
